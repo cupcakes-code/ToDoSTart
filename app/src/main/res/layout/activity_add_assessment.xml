@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".AddAssessmentActivity">
+
+    <EditText
+        android:id="@+id/tEt"
+        android:hint="Enter title"
+        android:padding="15dp"
+        android:background="@drawable/etshape"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+    // EDIT TO ADD SPINNER
+    <EditText
+        android:focusable="false"
+        android:clickable="true"
+        android:id="@+id/edEt"
+        android:hint="Select end date"
+        android:padding="15dp"
+        android:background="@drawable/etshape"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+    <com.jaredrummler.materialspinner.MaterialSpinner
+
+        android:id="@+id/spinner"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:ms_dropdown_max_height="200dp"
+        app:ms_arrow_tint="@color/black"
+        app:ms_text_color="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/teal_700"
+        android:onClick="addNewAssessment"
+        android:text="Save Assessment"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</LinearLayout>

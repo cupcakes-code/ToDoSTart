@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".AddCourseActivity">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/tEt"
+            android:hint="Enter title"
+            android:padding="15dp"
+            android:background="@drawable/etshape"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/inEt"
+            android:hint="Enter instructor name"
+            android:padding="15dp"
+            android:background="@drawable/etshape"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/ipEt"
+            android:hint="Enter instructor phone number"
+            android:padding="15dp"
+            android:background="@drawable/etshape"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/ieEt"
+            android:hint="Enter instructor email"
+            android:padding="15dp"
+            android:background="@drawable/etshape"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:padding="3dp"
+            android:background="@drawable/etshape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+
+                android:id="@+id/spinner"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                app:ms_dropdown_max_height="200dp"
+                app:ms_arrow_tint="@color/black"
+                app:ms_text_color="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:focusable="false"
+            android:clickable="true"
+            android:id="@+id/sdEt"
+            android:hint="Select start date"
+            android:padding="15dp"
+            android:background="@drawable/etshape"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <EditText
+            android:focusable="false"
+            android:clickable="true"
+            android:id="@+id/edEt"
+            android:hint="Select end date"
+            android:padding="15dp"
+            android:background="@drawable/etshape"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/noteEt"
+            android:hint="Enter notes ( Optional )"
+            android:padding="15dp"
+            android:background="@drawable/etshape"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:onClick="addNewCourse"
+            android:text="Save Course"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@color/teal_700"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".AddTermActivity">
+
+    <EditText
+        android:id="@+id/tEt"
+        android:hint="Enter title"
+        android:padding="15dp"
+        android:background="@drawable/etshape"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+
+    <EditText
+        android:focusable="false"
+        android:clickable="true"
+        android:id="@+id/sdEt"
+        android:hint="Select start date"
+        android:padding="15dp"
+        android:background="@drawable/etshape"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <EditText
+        android:focusable="false"
+        android:clickable="true"
+        android:id="@+id/edEt"
+        android:hint="Select end date"
+        android:padding="15dp"
+        android:background="@drawable/etshape"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="addNewTerm"
+        android:text="Save Term"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@color/teal_700"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+</LinearLayout>
